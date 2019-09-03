@@ -1,0 +1,20 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Unused Annotation Symbol Collection Cleanup</Name>
+  <AddInID>{88ac65de-d5ca-4d48-9967-21ccc09f7bbd}</AddInID>
+  <Description>Removes unused symbols from an annotation feature class symbol collection</Description>
+  <Version>1.0</Version>
+  <Image>Images\UnusedAnnotationSymbolCollectionCleanup.png</Image>
+  <Author>Sample</Author>
+  <Company>Sample</Company>
+  <Date>9/3/2019</Date>
+  <Targets>
+    <Target name="Desktop" version="10.7" />
+  </Targets>
+  <AddIn language="CLR" library="UnusedAnnotationSymbolCollectionCleanup.dll" namespace="UnusedAnnotationSymbolCollectionCleanup">
+    <ArcMap>
+      <Commands>
+        <Button id="Esri_UnusedAnnotationSymbolCollectionCleanup_RemoveSymbol" class="RemoveSymbol" message="Sample code to demonstrate how to remove unused symbols from an annotation feature class symbol collection." caption="Remove Unused Symbols" tip="Remove unused symbols from the annotation feature class." category="Add-In Controls" image="Images\RemoveSymbol.png" />
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>
